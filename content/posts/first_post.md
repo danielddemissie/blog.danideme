@@ -1,5 +1,3 @@
----
-
 +++
 title = "Migrate to Hugo from Jekyll"
 tags = ["hugo", "jekyll"]

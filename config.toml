@@ -6,22 +6,20 @@ theme = "m10c"
 
 
 [[menu.main]]
-  identifier = "Categories"
-  name = "Categories"
-  url = "/categories"
-
-
+  identifier = "about"
+  name = "About"
+  url = "/abour"
+  weight = 3
 
 [[menu.main]]
   identifier = "tags"
   name = "Tags"
-  url = "/tags"
+  url = "/tags/"
   weight = 2
   
 [[menu.main]]
   identifier = "home"
   name = "Home"
-  pre = "<i class='fa-solid fa-house'></i>"
   url = "/"
   weight = 1
 
