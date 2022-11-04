@@ -1,11 +1,37 @@
 languageCode = "en-us"
-title = "Danielddemissie's Blog"
+title = "Daniel's Blog"
 theme = "m10c"
+
+
+
+
+[[menu.main]]
+  identifier = "Categories"
+  name = "Categories"
+  url = "/categories"
+
+
+
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags"
+  weight = 2
+  
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  pre = "<i class='fa-solid fa-house'></i>"
+  url = "/"
+  weight = 1
 
 [params]
   author = "Daniel Demelash"
   description = "The little things I know about software development."
-
+  avatar = "images/profile_pic.png"
+  menu_item_separator = "|"
+  favicon = "images/favicon.ico"
+  
   [[params.social]]
     icon = "github"
     name = "GitHub"
@@ -15,3 +41,5 @@ theme = "m10c"
     icon = "twitter"
     name = "Twitter"
     url = "https://twitter.com/danielddeme"
+
+ 
