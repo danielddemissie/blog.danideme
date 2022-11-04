@@ -1,3 +1,17 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = "en-us"
+title = "Danielddemissie's Blog"
+theme = "m10c"
+
+[params]
+  author = "Daniel Demelash"
+  description = "The little things I know about software development."
+
+  [[params.social]]
+    icon = "github"
+    name = "GitHub"
+    url = "https://github.com/danielddemissie"
+
+  [[params.social]]
+    icon = "twitter"
+    name = "Twitter"
+    url = "https://twitter.com/danielddeme"
