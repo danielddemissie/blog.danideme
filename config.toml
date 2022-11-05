@@ -8,7 +8,7 @@ theme = "m10c"
 [[menu.main]]
   identifier = "about"
   name = "About"
-  url = "/abour"
+  url = "/about/"
   weight = 3
 
 [[menu.main]]
@@ -34,6 +34,11 @@ theme = "m10c"
     icon = "github"
     name = "GitHub"
     url = "https://github.com/danielddemissie"
+
+  [[params.social]]
+    icon = "linkedin"
+    name = "Linkedin"
+    url = "https://linkedin.com/in/danielddemissie"
 
   [[params.social]]
     icon = "twitter"
