@@ -6,16 +6,17 @@
     <description>Recent content in hugo on Daniel&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Mar 2014 00:00:00 +0000</lastBuildDate><atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Nov 2022 09:19:10 +0300</lastBuildDate><atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>/posts/first_post/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      <title>Blog Site With Hugo and Vercel</title>
+      <link>/posts/blog-site-with-hugo-and-vercel/</link>
+      <pubDate>Mon, 07 Nov 2022 09:19:10 +0300</pubDate>
       
-      <guid>/posts/first_post/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+      <guid>/posts/blog-site-with-hugo-and-vercel/</guid>
+      <description>Hello friends, This my Step by step guide to build and deploy blog site with Hugo and Vercel that I used for my blog site and I hope this might be some use for you too. 1. Install Hugo Installing Hugo on Linux. If your distribution support snap
+snap install hugo --channel=extended Or you can use apt-get
+sudo apt-get install hugo Check if hugo is successfully installed.
+hugo version If you get a response similar Hugo is successfully installed.</description>
     </item>
     
   </channel>

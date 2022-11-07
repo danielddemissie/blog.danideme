@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Daniel&#39;s Blog</title>
-    <link>/posts/</link>
-    <description>Recent content in Posts on Daniel&#39;s Blog</description>
+    <title>vercel on Daniel&#39;s Blog</title>
+    <link>/tags/vercel/</link>
+    <description>Recent content in vercel on Daniel&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Nov 2022 09:19:10 +0300</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Nov 2022 09:19:10 +0300</lastBuildDate><atom:link href="/tags/vercel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog Site With Hugo and Vercel</title>
       <link>/posts/blog-site-with-hugo-and-vercel/</link>
