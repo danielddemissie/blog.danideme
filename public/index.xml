@@ -13,7 +13,7 @@
       <pubDate>Mon, 07 Nov 2022 09:19:10 +0300</pubDate>
       
       <guid>/posts/blog-site-with-hugo-and-vercel/</guid>
-      <description>Hello friends, This my Step by step guide to build and deploy blog site with Hugo and Vercel that I used for my blog site and I hope this might be some use for you too. 1. Install Hugo Installing Hugo on Linux. If your distribution support snap
+      <description>Hello friends, This my step by step guide to build and deploy blog site with Hugo and Vercel that I used for my blog site and I hope this might be some use for you too. 1. Install Hugo Installing Hugo on Linux. If your distribution support snap
 snap install hugo --channel=extended Or you can use apt-get
 sudo apt-get install hugo Check if hugo is successfully installed.
 hugo version If you get a response similar Hugo is successfully installed.</description>

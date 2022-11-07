@@ -5,7 +5,7 @@ tags : ["hugo","vercel"]
 draft: false
 ---
 
-# Hello friends, This my Step by step guide to build and deploy blog site with `Hugo` and `Vercel` that I used for my blog site and I hope this might be some use for you too.
+# Hello friends, This my step by step guide to build and deploy blog site with `Hugo` and `Vercel` that I used for my blog site and I hope this might be some use for you too.
 
 
 ### 1. Install Hugo
@@ -211,14 +211,14 @@ open your vercel dashboard
 #### Import from github
 ![import-from-github](https://i.ibb.co/TtbbNYs/Screenshot-from-2022-11-07-11-07-41.png)
 
-#### Select the project to deploy and the click deploy.
+#### Select the project to deploy and click deploy.
 ![select-the-project-to-deploy-and-the-click-deploy](https://i.ibb.co/sV7XfLt/Screenshot-from-2022-11-07-11-07-58.png)
 
-#### The blog site is Live.
+#### Congrats 🎉 your blog site is LIVE!.
 ![deployed](https://i.ibb.co/TTPvHVF/image-2022-11-07-122304084.png)
 
-Congrats 🎉 your blog site is LIVE!.
 
-Now wheneever you made some change to the `main` branch vercel will update your site.
+
+Now whenever you made some change to the `main` branch vercel will update your site.
 
 **Thanks** for reading my blog.
