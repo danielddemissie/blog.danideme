@@ -5,6 +5,7 @@ tags : ["hugo","vercel"]
 draft: false
 ---
 
+![hugo-vercel](https://i.ibb.co/51BSJGc/image-2022-11-07-131127067.png)
 # Hello friends, This my step by step guide to build and deploy blog site with `Hugo` and `Vercel` that I used for my blog site and I hope this might be some use for you too.
 
 
