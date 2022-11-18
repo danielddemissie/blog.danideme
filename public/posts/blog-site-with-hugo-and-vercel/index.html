@@ -4,7 +4,7 @@
     <title>Blog Site With Hugo and Vercel // Daniel&#39;s Blog</title>
     <link rel="shortcut icon" href="images/favicon.ico" />
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.105.0">
+    <meta name="generator" content="Hugo 0.106.0">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Daniel Demelash" />
     <meta name="description" content="" />
@@ -16,13 +16,13 @@
 <meta name="twitter:description" content="Hello friends, This my step by step guide to build and deploy blog site with Hugo and Vercel that I used for my blog site and I hope this might be some use for you too. 1. Install Hugo Installing Hugo on Linux. If your distribution support snap
 snap install hugo --channel=extended Or you can use apt-get
 sudo apt-get install hugo Check if hugo is successfully installed.
-hugo version If you get a response similar Hugo is successfully installed."/>
+hugo version If you get response similar to below, Hugo is successfully installed."/>
 
     <meta property="og:title" content="Blog Site With Hugo and Vercel" />
 <meta property="og:description" content="Hello friends, This my step by step guide to build and deploy blog site with Hugo and Vercel that I used for my blog site and I hope this might be some use for you too. 1. Install Hugo Installing Hugo on Linux. If your distribution support snap
 snap install hugo --channel=extended Or you can use apt-get
 sudo apt-get install hugo Check if hugo is successfully installed.
-hugo version If you get a response similar Hugo is successfully installed." />
+hugo version If you get response similar to below, Hugo is successfully installed." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/blog-site-with-hugo-and-vercel/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-11-07T09:19:10+03:00" />
@@ -111,7 +111,7 @@ If your distribution support <code>snap</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install hugo
 </span></span></code></pre></div><p>Check if hugo is successfully installed.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo version
-</span></span></code></pre></div><p>If you get a response similar Hugo is successfully installed.</p>
+</span></span></code></pre></div><p>If you get response similar to below, Hugo is successfully installed.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo v0.105.0-0e3b42b4a9bdeb4d866210819fc6ddcf51582ffa+extended linux/amd64 BuildDate<span style="color:#f92672">=</span>2022-10-28T12:29:05Z VendorInfo<span style="color:#f92672">=</span>snap:0.105.0
 </span></span></code></pre></div><p>If you are using windows follow this instruction <a href="https://gohugo.io/getting-started/installing/#windows">hugo-windows</a></p>
 <h3 id="2create-new-site">2.Create new Site</h3>
@@ -122,7 +122,7 @@ If your distribution support <code>snap</code></p>
 <li>Create new Hugo site with your blog site name</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site blog-site
-</span></span></code></pre></div><p>This will give us short command on how to add a theme , content and commands to build site we will see all of the later.</p>
+</span></span></code></pre></div><p>This will give us short instruction on how to add a theme and content to our site. We will see all of them in detail.</p>
 <pre tabindex="0"><code>Just a few more steps and you&#39;re ready to go:
 
 1. Download a theme into the same-named folder.
@@ -134,8 +134,8 @@ If your distribution support <code>snap</code></p>
 
 Visit https://gohugo.io/ for quickstart guide and full documentation.
 </code></pre><h3 id="3use-hugo-theme">3.Use Hugo theme</h3>
-<p>Hugo has nice configuration to add our preferd them and manage the UI/UX of our site. once yout select a <a href="https://themes.gohugo.io/">Hugo-Themes</a>
-we can add the theme to our site using one of these two methods.</p>
+<p>Hugo has nice configuration to add our preferd them and manage the UI/UX of our site. once we select a <a href="https://themes.gohugo.io/">Hugo-Themes</a>
+we can proceed to add a theme to our site using one of these two methods.</p>
 <ol>
 <li>
 <p>Make the selected theme git repository a <code>subtree</code> to our site</p>
@@ -150,9 +150,7 @@ we can add the theme to our site using one of these two methods.</p>
 </ul>
 </li>
 </ol>
-<p>For our site lets use <a href="https://github.com/vaga/hugo-theme-m10c.git">m10c</a> theme again we have two option to use this theme.
-Since I&rsquo;m fine with current UI/UX and functionality of the theme and i want store the file localy i will the seccond approach if you want to.</p>
-<p>clone the theme</p>
+<p>For our site lets use <a href="https://github.com/vaga/hugo-theme-m10c.git">m10c</a> a theme similar to this blog site.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd themes
 </span></span><span style="display:flex;"><span>git clone https://github.com/vaga/hugo-theme-m10c.git ./m10c
 </span></span></code></pre></div><h3 id="4update-the-configtoml">4.Update the config.toml</h3>
@@ -162,8 +160,8 @@ Since I&rsquo;m fine with current UI/UX and functionality of the theme and i wan
 * available menus
 * social media links and more
 </code></pre>
-<p>1.Open up your config.toml file and add this information
-<code>Remember to change the data to your own information.</code></p>
+<p>Open up your config.toml file and add this information</p>
+<p><code>Remember to change the data to your own information.</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>languageCode <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;en-us&#34;</span>
 </span></span><span style="display:flex;"><span>title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Daniel&#39;s Blog&#34;</span>
 </span></span><span style="display:flex;"><span>theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;m10c&#34;</span>
@@ -173,7 +171,7 @@ Since I&rsquo;m fine with current UI/UX and functionality of the theme and i wan
 </span></span><span style="display:flex;"><span>  name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Tags&#34;</span>
 </span></span><span style="display:flex;"><span>  url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/tags/&#34;</span>
 </span></span><span style="display:flex;"><span>  weight <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
-</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">[[</span>menu.main<span style="color:#f92672">]]</span>
 </span></span><span style="display:flex;"><span>  identifier <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;home&#34;</span>
 </span></span><span style="display:flex;"><span>  name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Home&#34;</span>
@@ -188,7 +186,7 @@ Since I&rsquo;m fine with current UI/UX and functionality of the theme and i wan
 </span></span><span style="display:flex;"><span>  menu_item_separator <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;|&#34;</span>
 </span></span><span style="display:flex;"><span>  favicon <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;images/favicon.ico&#34;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">#add favico image</span>
-</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">[[</span>params.social<span style="color:#f92672">]]</span>
 </span></span><span style="display:flex;"><span>    icon <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;github&#34;</span>
 </span></span><span style="display:flex;"><span>    name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;GitHub&#34;</span>
@@ -203,56 +201,52 @@ Since I&rsquo;m fine with current UI/UX and functionality of the theme and i wan
 </span></span><span style="display:flex;"><span>    icon <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;twitter&#34;</span>
 </span></span><span style="display:flex;"><span>    name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Twitter&#34;</span>
 </span></span><span style="display:flex;"><span>    url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://twitter.com/danielddeme&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span> 
 </span></span></code></pre></div><p>For this to work properly you have to add <code>favico</code> and the <code>avatar</code> image inside public/images folder and static/images folder with same file name.</p>
 <h3 id="5-create-first-post">5. Create first post</h3>
 <p>Now it&rsquo;s time to add our first blog to our site to do this first go back to main directory and run this command.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ..
 </span></span><span style="display:flex;"><span>hugo new posts/first-post.md
-</span></span></code></pre></div><p>This command posts directory with <code>first-post.md</code> inside the content folder.When you open the <code>fist-post.md</code> file in text your editor you will see that the post is in a draft mode or <code>darft = true</code> so add some content to this file and change <code>draft = false</code> after doing that save your changes and run these commands.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo 
+</span></span></code></pre></div><p>This command create posts directory with name <code>first-post.md</code> inside the <code>content</code> folder. When you open this file in text editor you will see a fragment of code <code>darft = true</code> which means the post is in a draft mode or so add some content to this file and change <code>draft = false</code> after doing that save your changes and run these commands.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo
 </span></span><span style="display:flex;"><span>hugo server
 </span></span></code></pre></div><p>The <code>hugo</code> command will generate the neccessary configuration and html files to render the app.</p>
-<pre tabindex="0"><code>Start building sites … 
+<pre tabindex="0"><code>Start building sites …
 hugo v0.105.0-0e3b42b4a9bdeb4d866210819fc6ddcf51582ffa+extended linux/amd64 BuildDate=2022-10-28T12:29:05Z VendorInfo=snap:0.105.0
 
-                   | EN  
+                   | EN
 -------------------+-----
-  Pages            | 10  
-  Paginator pages  |  0  
-  Non-page files   |  0  
-  Static files     |  1  
-  Processed images |  0  
-  Aliases          |  2  
-  Sitemaps         |  1  
-  Cleaned          |  0  
+  Pages            | 10
+  Paginator pages  |  0
+  Non-page files   |  0
+  Static files     |  1
+  Processed images |  0
+  Aliases          |  2
+  Sitemaps         |  1
+  Cleaned          |  0
 
 Total in 94 ms
-</code></pre><p><code>hugo server</code> will start up the application at port 1313.
-if no other service is running on that port. Now that our blog site is  up and running lets open http://localhost:1313 in our browser.</p>
+</code></pre><p><code>hugo server</code> will start up the application at port 1313 If no other service is running on that port. Now that our blog site is up and running lets open http://localhost:1313 in our browser.</p>
 <h3 id="6-push-to-github">6. Push to gitHub</h3>
-<p>Create new github repository with the site name and copy your the url.
-The only reason i rename the main branch from <code>master</code> to <code>main</code> is I like main better unlike github&rsquo;s reason.</p>
+<p>Create new Github repository with the site name and copy the url.
+<code>The only reason i rename the main branch from master to main is I like main better unlike github's reason</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git init
 </span></span><span style="display:flex;"><span>git add -A
 </span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;START: first commit&#34;</span>
 </span></span><span style="display:flex;"><span>git branch -M main
-</span></span><span style="display:flex;"><span>git remote add origin https://your-github-account/site-name.git
+</span></span><span style="display:flex;"><span>git remote add origin url-to-your-blog-repository
 </span></span><span style="display:flex;"><span>git push -u origin main
 </span></span></code></pre></div><h3 id="7-deploy-to-vercel">7. Deploy to vercel</h3>
 <p>Vercel is the platform for frontend developers, providing the speed and reliability innovators need to create at the moment of inspiration.Beside that They offer one of the best Hobby(Free) account service.</p>
 <p><img src="https://i.ibb.co/XZn2z3T/image-2022-11-07-105121043.png" alt="vercel-limit"></p>
-<p>If you don&rsquo;t have vercel account,create free vercel account and come back here!.</p>
-<p>To deploy Hugo sites to vercel doesnot require any additional configuration all you have to do is just push the change you want to deploy to main/master of the project repository and vercel will do the its own configuration for Hugo site.</p>
+<p>If you don&rsquo;t have vercel account, create free vercel account and come back here!.</p>
+<p>To deploy your Hugo sites to vercel does not require any additional configuration. All you have to do is just push the change you want to deploy to main branch of the project repository and vercel will do its own configuration for Hugo site and deploy the change.</p>
 <p>Lets deploy. first check If everything is saved then</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
 </span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;DEPLOY: deploy to vercel&#34;</span>
 </span></span><span style="display:flex;"><span>git push
-</span></span></code></pre></div><p>open your vercel dashboard</p>
-<h4 id="add-new-project">Add new project</h4>
+</span></span></code></pre></div><h4 id="open-your-vercel-dashboard-and-add-new-project">Open your vercel dashboard and Add new project</h4>
 <p><img src="https://i.ibb.co/SrXtrsP/Screenshot-from-2022-11-07-11-07-22.png" alt="add-new-project"></p>
-<h4 id="import-from-github">Import from github</h4>
+<h4 id="import-from-github">Import from Github</h4>
 <p><img src="https://i.ibb.co/TtbbNYs/Screenshot-from-2022-11-07-11-07-41.png" alt="import-from-github"></p>
 <h4 id="select-the-project-to-deploy-and-click-deploy">Select the project to deploy and click deploy.</h4>
 <p><img src="https://i.ibb.co/sV7XfLt/Screenshot-from-2022-11-07-11-07-58.png" alt="select-the-project-to-deploy-and-the-click-deploy"></p>
