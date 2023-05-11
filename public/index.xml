@@ -8,6 +8,19 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 07 Nov 2022 09:19:10 +0300</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title></title>
+      <link>/about/</link>
+      <pubDate>Thu, 11 May 2023 14:30:00 +0100</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Hey there ! I&amp;rsquo;m Daniel a Full-stack web Developer.
+  I’m currently working as a Software Developer @ phishfort.com
+  Exploring Web3 &amp;amp; Crypto.
+  How to reach me: 
+   My Stats :</description>
+    </item>
+    
+    <item>
       <title>Blog Site With Hugo and Vercel</title>
       <link>/posts/blog-site-with-hugo-and-vercel/</link>
       <pubDate>Mon, 07 Nov 2022 09:19:10 +0300</pubDate>
@@ -17,16 +30,6 @@
 snap install hugo --channel=extended Or you can use apt-get
 sudo apt-get install hugo Check if hugo is successfully installed.
 hugo version If you get response similar to below, Hugo is successfully installed.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>Hi I&amp;rsquo;m Daniel I&amp;rsquo;m Daniel Demelash a Full Stack Web Developer . I Spend most of time studing and implemeting latest web technologies.
-:mailbox: Reach me out! 🔭 I’m currently studying CSE at Adama Science and Technology University 🤔 I’m looking forward to work with anyone intersted in web-dev 📫 How to reach me: danielddemissie@gmail.com. Top Technologies i worked on Top Languages Git status </description>
     </item>
     
   </channel>
